@@ -1,0 +1,106 @@
+SOru1)Button1 e tıklandığında TextBox1 e girilen texti harf harf ListBoxa
+ ekleyen kodu yazınız.
+
+         protected void Button1_Click(object sender, EventArgs e)
+        {
+            string isim = TextBox1.Text;
+
+            for (int i = 0; i < TextBox1.Text.Length; i++)
+            {
+                ListBox1.Items.Add(isim[i].ToString());
+            }
+        }
+Soru2.)	Button1 e tıklandığında TextBox1 e girilen textin içindeki a harfinin
+sayısını bulup TextBox2 yazdıran kodu yazınız.
+	
+		 protected void Button1_Click(object sender, EventArgs e)
+        {
+            string str = TextBox1.Text;
+            int sayac = 0;
+
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (str[i] == 'a')
+                {
+                    sayac++;
+                }
+            }
+
+            TextBox2.Text = sayac.ToString();
+        }
+		
+Soru3.)	Button1 e tıklandığında TextBox1 e girilen textin uzunluğu 5 ten büyükse
+TextBox2 nin içine "Breh Breh"	değilse "Yeterli veri yoktur yazsın".
+
+   protected void Button1_Click(object sender, EventArgs e)
+        {
+            string str = TextBox1.Text;
+
+            if (str.Length > 5)
+            {
+                TextBox2.Text = "Breh Breh";
+            }
+            else
+            {
+                TextBox2.Text = "Yeterli veri yoktur";
+            }
+        }
+Soru4.)Button1 e tıklandığında TextBox1 e girilen textin harflerini ListBox1 e eklesin
+ 'a' harfinin yerine "Mahmut" eklesin.
+
+	  protected void Button1_Click(object sender, EventArgs e)
+        {
+            //string str = TextBox1.Text;Bunu kullanmadım bu sefer yoruma aldım
+            //kullanırsanız TextBox1.Text yerine str yazın aşağida
+
+            for (int i = 0; i < TextBox1.Text.Length; i++)
+            {
+                if (TextBox1.Text[i] == 'a')
+                {
+                    ListBox1.Items.Add("Mahmut");
+                }
+                else
+                {
+                    ListBox1.Items.Add(TextBox1.Text[i].ToString());
+                }
+            }
+        }
+		
+Soru5.)	TextBox1 e girilen stringin uzunluğu 5 ten küçükse TextBox2 ye
+"Yeterli veri yoktur" yazsın aksi takdirde string içindeki 'a' harfini sayisini  yazsın. 	
+	 protected void Button1_Click(object sender, EventArgs e)
+        {
+            int sayac = 0;
+
+            if (TextBox1.Text.Length<5)
+            {
+                TextBox2.Text = "Yeterli veri yoktur";
+            }
+            else
+            {
+                for (int i = 0; i < TextBox1.Text.Length; i++)
+                {
+                    if (TextBox1.Text[i]=='a')
+                    {
+                        sayac++;
+                    }
+                }
+
+                TextBox2.Text = sayac.ToString();
+
+            }
+           
+        }	
+
+
+
+
+
+
+
+
+
+
+
+
+		

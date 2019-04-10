@@ -1,0 +1,19 @@
+Soru2.)Css kaç şekilde html sayfasına dahil edilir?
+3 şekilde
+
+1.Inline Css:html elementinin style attribute ile ilgili html taginin içine yazılır.
+örnek)<p style="text-align:center">Css Dahil Etme</p>.
+
+2.Internal Css: Style tagi yardımıyla head bölümüne yazılır.Tek sayfada kullanılır.
+<head>
+<style>
+p {text-align:center}
+</style>
+</head>
+
+3.External Css:Cssler Ayrı sayfaya yazılır.Yine head bölümünde link 
+etiketiyle dış ccs sayfasına link veririlir.Birden fazla sayfada kullanılır.
+örnek) 
+<head>
+<link href="css/index.css" rel="stylesheet">
+</head>

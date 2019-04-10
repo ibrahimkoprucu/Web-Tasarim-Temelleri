@@ -1,0 +1,75 @@
+
+      //1.Butona tıklayınca Cagdas ikinci harfini textbox2 ye yazsın.
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            string isim = "Cagdas";
+
+            TextBox2.Text = isim[1].ToString();
+        }
+
+        //2.Butona tıklayınca CheckBox1 seçili ise Textbox1 e Kadir
+        //değilse textbox2 ye Cagdas yazsın
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            if (CheckBox1.Checked)
+            {
+                TextBox2.Text = "Kadir";
+            }
+            else
+            {
+                TextBox2.Text = "Cagdas";
+            }
+        }
+
+        //3.Butona tıklayınca TextBoxa yazılan string bütün olarak
+        //DropDown liste eklenecek
+		
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            string str = TextBox1.Text;
+            DropDownList1.Items.Add(str);
+        }
+
+        //4.Butona tıklayınca TextBoxa yazılan stringin içindeki a herflerini birer boşlukla
+        //Textbox2 ye yazdır
+		
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            string str = TextBox1.Text;
+
+           for (int i = 0; i < str.Length; i++)
+           {
+               if (str[i] == 'a')
+               {
+                   TextBox2.Text += str[i].ToString() + " ";//+= e dikkat edin
+               }
+           }
+       }
+
+        //5. 1den 20 ye kadar olan tek sayıları TextBox1e çift sayıları TextBox2 ye yazsın
+        //protected void Button1_Click(object sender, EventArgs e)
+        {
+            for (int i = 1; i <= 20; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    TextBox2.Text += i.ToString() + " ";//+= e dikkat edin
+                }
+                else
+                {
+                    TextBox1.Text += i.ToString() + " ";
+                }
+            }
+        }
+        //6. TextBox1 e girilen stringi tersten TextBox2 ye yazsın
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            string str = TextBox1.Text;
+
+            for (int i = TextBox1.Text.Length - 1; i >= 0; i--)
+            {
+                TextBox2.Text += str[i];
+            }
+        }
+    }
+}

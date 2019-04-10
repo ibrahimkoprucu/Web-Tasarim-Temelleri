@@ -1,0 +1,51 @@
+Soru1.)Aşağıdaki html elementlerinin görevlerini yazınız.
+
+1.<a> ...anchor element başka bir web sayfasına hyperlink üretir.(Başka bir sayfaya link vermek için kullanılır)
+örnek)<a href="https://maltepe.edu.tr/">Maltepe Universitesi</a>
+2.<br> ...breakline Satır atlatmak için kullanılır.
+örnek)<p>anne ölünce çocuk <br>
+bahçenin en yalnız köşesinde <br>
+elinde bir siyah çubuk <br>
+ağzında küçük bir leke <br> </p>
+3.<i>...italic aradaki texti eğik yazı ile yazar (italic yazar)
+örnek)<p>Benim kedimin ismi<i>Tekir</i>dir</p>
+4.<body>...Html dokumanın içeriğini belirten elementtir.
+5.<div> ...Content Division element html içeriğini kısımlara ayırmak(bölmek) için kullanılır
+6. <h1>–<h6> 6 seviye başlıklar h1 en büyük yazı tipi  h6 en küçük yazı tipi
+7.<head> makine tarafından okunabilen bilgileri içeren title,css gibi içeriklerin bulunduğu element.
+8.<hr> horizontal line yatay bir çizgi tematik değişim sağlamak için kullanılır.
+9.<ul>...unordered list listeleme etiketi
+    <li>Neil Armstrong</li>
+    <li>Alan Bean</li>
+    <li>Peter Conrad</li>
+    <li>Edgar Mitchell</li>
+    <li>Alan Shepard</li>
+</ul>
+10.<ol>...ordered list numaralarla veya harflerle  listeleme için kullanılır
+  <li>Neil Armstrong</li>
+    <li>Alan Bean</li>
+    <li>Peter Conrad</li>
+    <li>Edgar Mitchell</li>
+    <li>Alan Shepard</li>
+</ol>
+11.<p> paragraph etiketidir
+12.<strong> yazıyı kalınlaştırır
+13.<b> (bold) yazıyı kalınlaştırır
+14.<center> yazıyı ortalar
+15.<table> ...tablo elementi
+    <thead>...tablo başlık
+        <tr> ...tablo satır
+            <th>The table header</th>...tablo başlık satırdaki hücre
+        </tr>
+    </thead>
+    <tbody>...tablo gövde
+        <tr>...tablo satır
+            <td>The table body</td>...tablo data (satırdaki hücre)
+            <td>with two columns</td>...tablo data (satırdaki hücre)
+        </tr>
+    </tbody>
+</table>
+16. <u> underline yanlış yazılmış kelimenin altını çizmek için kullanılır
+17.<marquee> yazıyı kaydırma 
+18.<img src="smiley.gif" alt="Smiley face"> image tag sayfaya bir görsel eklemek için kullanılır 
+19.<title> html dokumanın başlığını belirtir head elementinin arasına yazılır

@@ -1,0 +1,66 @@
+Soru1)Butona tıklandığında Textbox1 a girilen sayı ya kadar 
+olan tek sayılar listBoxa eklenecek
+ protected void Button1_Click(object sender, EventArgs e)
+    {
+        
+        int sayi = Convert.ToInt32(TextBox1.Text);
+
+        for (int i = 1; i <= sayi; i += 2)
+        {
+            ListBox1.Items.Add(i.ToString());
+        }
+     
+	   //2.yol
+	  for (int i = 0; i < sayi; i ++)
+		  
+        {  
+			if(i%2==1)
+			{
+			  ListBox1.Items.Add(i.ToString());
+			
+			}
+            
+        }
+	  
+	  
+    }
+Soru2)Butona tıklandığında	textbox a girilen textin karakterlerini dropdownliste ekle
+
+	protected void Button1_Click(object sender, EventArgs e)
+    {
+        for (int i = 0; i < TextBox1.Text.Length; i++)
+        { 
+	       DropDownList1.Items.Add(TextBox1.Text[i].ToString());
+           
+        }
+    }
+Soru3)Butona tıklandığında verilen stringin boşuklar hariç karakter sayısını bulma
+
+ protected void Button1_Click(object sender, EventArgs e)
+    {
+        int counter = 0;
+        char ch = ' ';
+        for (int i = 0; i < TextBox1.Text.Length; i++)
+        {
+            if (TextBox1.Text[i] != ch)//boşluk değilse
+            {
+                counter++;
+            }
+        }
+        TextBox1.Text = counter.ToString();
+    }
+	
+Soru4)Butona tıklanınca TextBox1 de yazan değeri TextBox2 ye aktarsın
+
+ protected void Button1_Click(object sender, EventArgs e)
+    {
+        TextBox2.Text = TextBox1.Text;
+    }
+	
+Soru5)Butona tıklanınca web sitesine yönlendirme
+ protected void Button1_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("http://www.google.com");
+    }
+
+
